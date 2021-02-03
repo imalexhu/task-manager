@@ -1,0 +1,64 @@
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    width: 100%;
+    height: 100%;
+}
+
+.task-manager-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 700px;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkgreen;
+}
+
+.task-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkgreen;
+}
+
+.task-list-container {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+}
+
+.sidebar {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+}
+
+.list-menu {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.new-task {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

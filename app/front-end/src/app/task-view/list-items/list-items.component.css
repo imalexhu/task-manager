@@ -1,0 +1,16 @@
+* {
+    padding: 10px 15px;
+    color: black;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.is-active {
+    color: darkgreen!important;
+    background-color: #9E9E9E!important;
+}
+
+*:hover {
+    background-color: #F8F8F8;
+}
