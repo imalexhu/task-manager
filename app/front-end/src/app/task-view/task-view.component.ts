@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task-view.component.css']
 })
 export class TaskViewComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {

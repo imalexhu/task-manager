@@ -1,4 +1,5 @@
-const { mongoose } = require('./mongose')
+const { mongoose } = require('./mongoose')
+
 
 const ListSchema = new mongoose.Schema({
     title: {
@@ -9,7 +10,7 @@ const ListSchema = new mongoose.Schema({
     }
 })
 
-const List = mongose.Model('List', ListSchema)
+const List = mongoose.model('List', ListSchema)
 
 const TaskSchema = new mongoose.Schema({
     title: {
@@ -25,7 +26,7 @@ const TaskSchema = new mongoose.Schema({
 })
 
 
-const Task = mongose.Model('localhost:27017/TaskManager', TaskSchema)
+const Task = mongoose.model('Task', TaskSchema)
 
 module.exports = {
     List,

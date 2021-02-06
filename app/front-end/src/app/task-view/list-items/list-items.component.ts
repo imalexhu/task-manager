@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { TaskServiceService } from '../task-service.service';
 
 @Component({
   selector: 'app-list-items',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-items.component.css']
 })
 export class ListItemsComponent implements OnInit {
+  
 
-  constructor() { }
+  lists:any;
+
+  constructor(private taskService: TaskServiceService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.taskService.getList().subscribe((lists)=>{
+      this.lists = lists;
+    })
   }
+
 
 }

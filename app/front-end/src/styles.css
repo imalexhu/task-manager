@@ -11,3 +11,16 @@ html {
     height: 100%;
     background-color: turquoise;
 }
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkgreen;
+}
