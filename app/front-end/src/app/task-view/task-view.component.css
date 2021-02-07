@@ -17,6 +17,7 @@
 }
 
 .task-list-container {
+    position: relative;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -41,7 +42,11 @@
 }
 
 .new-sub-task {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+}
+
+.new-sub-task:hover {
+    cursor: pointer;
 }

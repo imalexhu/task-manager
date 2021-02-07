@@ -1,6 +1,5 @@
-import { HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TaskServiceService } from '../task-view/task-service.service';
 
 @Component({
@@ -10,9 +9,10 @@ import { TaskServiceService } from '../task-view/task-service.service';
 })
 export class NewSubTaskPageComponent implements OnInit {
 
-  id:any
-  
-  constructor(private taskService: TaskServiceService ,private route:ActivatedRoute) { }
+
+  constructor(private taskService: TaskServiceService ,private route:ActivatedRoute, private router:Router) { }
+
+  id:string= ""
 
   ngOnInit(): void {
     this.route.params.subscribe((params)=>{
@@ -22,7 +22,8 @@ export class NewSubTaskPageComponent implements OnInit {
 
 
   createTask(title:string){
-    this.taskService.createTask(this.id,title).subscribe((result=>console.log(result)))
+    this.taskService.createTask(this.id,title).subscribe()
+    this.router.navigate(['/lists',this.id])
   }
 
   createNewTask(title: string) {

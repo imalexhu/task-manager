@@ -15,10 +15,17 @@ export class TaskItemsComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(
       (params: Params) => {
-        console.log(params)
         this.taskService.getTasks(params._listId).subscribe((tasks) => {
-          this.tasks=tasks
+          this.tasks = tasks
         })
       })
+  }
+  onTaskClick(event: any) {
+    this.taskService.completed(this.tasks)
+    if (this.tasks.completed==true) {
+      event.srcElement.classList.add("complete")
+    }else{
+      event.srcElement.classList.remove("complete")
+    }
   }
 }
