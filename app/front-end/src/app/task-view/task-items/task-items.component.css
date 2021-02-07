@@ -1,4 +1,7 @@
 div {
+    position: relative;
+    display: flex;
+    align-items: center;
     margin-bottom: 5px;
     background: white;
     padding: 5px;
@@ -12,4 +15,24 @@ div:hover {
 
 .complete {
     text-decoration: line-through;
+}
+
+.edit {
+    color: white;
+    font-size: 11px;
+    width: 50px;
+    position: absolute;
+    background-color: green;
+    right: 25px;
+    height: 25px;
+}
+
+.delete {
+    color: white;
+    font-size: 11px;
+    width: 50px;
+    position: absolute;
+    background-color: red;
+    right: 90px;
+    height: 25px;
 }

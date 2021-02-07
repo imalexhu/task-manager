@@ -28,4 +28,13 @@ export class TaskItemsComponent implements OnInit {
       event.srcElement.classList.remove("complete")
     }
   }
+
+  editTask(){
+    console.log("Editting task")
+  }
+
+  deleteTask(){
+    console.log("deleating task")
+
+  }
 }
