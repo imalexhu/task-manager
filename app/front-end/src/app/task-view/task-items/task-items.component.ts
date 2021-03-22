@@ -35,6 +35,5 @@ export class TaskItemsComponent implements OnInit {
 
   deleteTask(){
     console.log("deleating task")
-
   }
 }
